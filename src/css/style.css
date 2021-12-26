@@ -14,9 +14,7 @@ html,
 body {
   background-color: #f7f7f7;
   color: #606060;
-  font-family: 'Sumana', serif;
   font-weight: 400;
-  font-size: 20px;
   text-rendering: optimizeLegibility;
   overflow-x: hidden;
 }
@@ -29,10 +27,10 @@ section {
   padding: 10%;
 }
 
-.long-copy {
+/*.long-copy {
   line-height: 145%;
 }
-
+*/
 /* ------------------------------------------------- */
 /* First Page */
 /* ------------------------------------------------- */
@@ -64,30 +62,15 @@ section {
     /* border-bottom: 2px solid #e67e22; 
 } */
 
-.main-nav {
-  display: flex;
-  flex-wrap: nowrap;
-}
 
-.main-nav li {
-  display: inline-block;
-  margin-right: 5px;
-}
-
-.nav-bar {
-  padding: 5% 0;
-}
 
 /* ------------------------------------------------- */
 /* Icons */
 /* ------------------------------------------------- */
 
-.icons {
+/* .icons {
   width: 1140px;
   margin: 0 auto;
 }
+*/
 
-.iconify {
-  margin-right: 20px;
-  font-size: 300%;
-}

@@ -1,57 +1,106 @@
-import { Icon } from '@iconify/react'
-import gmailIcon from '@iconify-icons/simple-icons/gmail'
-import leetcodeIcon from '@iconify-icons/simple-icons/leetcode'
-import fileInfoAlt from '@iconify-icons/uil/file-info-alt'
-import linkedinFilled from '@iconify-icons/ant-design/linkedin-filled'
-import githubFilled from '@iconify-icons/ant-design/github-filled'
+import styled from 'styled-components'
+import { Linkedin } from '@styled-icons/bootstrap'
+import { Gmail, Leetcode, Github } from '@styled-icons/simple-icons'
+import { DocumentBulletList } from '@styled-icons/fluentui-system-filled'
 import resume from '../resume/Carl_Guan_CV.pdf'
+
+const IconWrapper = styled.div`
+  display: inline;
+  width: 7%;
+  padding: 0;
+  margin-right: 60px;
+`
+
+const IconNameWrapper = styled.p`
+  visibility: hidden;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  color: ${(props) => props.color};
+  font: Source Code Pro;
+  font-size: 25px;
+  font-weight: bold;
+  text-decoration: underline;
+  ${(props) => props.hover}:hover & {
+    visibility: visible;
+  }
+`
+
+const ButtonsWrapper = styled.div`
+  display: flex;
+  margin-top: 7%;
+`
+
+const createIcon = ({ name, href, iconName, color, hoverColor, textColor }) => {
+  const StyledIcon = styled(iconName)`
+    margin-bottom: 20px;
+    padding: 0;
+    color: ${color};
+    &:hover {
+      color: ${hoverColor};
+    }
+  `
+  return (
+    <IconWrapper>
+      <a href={href} target="_blank" rel="noreferrer">
+        <StyledIcon />
+        <IconNameWrapper hover={IconWrapper} color={color}>
+          {name}
+        </IconNameWrapper>
+      </a>
+    </IconWrapper>
+  )
+}
 
 const personalLinks = () => {
   const personalLinkObjs = [
     {
-      iconName: gmailIcon,
-      style: { color: '#D14836' },
+      name: 'gmail',
+      iconName: Gmail,
+      color: '#D14836',
+      textColor: '#FBBC05',
+      hoverColor: '#4285F4',
       href: 'mailto:carlxguan@gmail.com',
     },
     {
-      iconName: fileInfoAlt,
-      style: { color: '#000' },
+      name: 'résumé',
+      iconName: DocumentBulletList,
+      color: '#228B22',
+      textColor: '#228B22',
+      hoverColor: '#000',
       href: resume,
     },
     {
-      iconName: leetcodeIcon,
-      style: { color: '#F89F1B' },
+      name: 'leetcode',
+      iconName: Leetcode,
+      color: '#F89F1B',
+      textColor: '#F89F1B',
+      hoverColor: '#A0A0A0',
       href: 'https://leetcode.com/c-x-g',
     },
     {
-      iconName: linkedinFilled,
-      style: { color: '#0077b5' },
+      name: 'linkedin',
+      iconName: Linkedin,
+      color: '#0077b5',
+      textColor: '#0077b5',
+      hoverColor: 'teal',
       href: 'https://www.linkedin.com/in/carl-guan-b073341a5',
     },
     {
-      iconName: githubFilled,
-      style: { color: '#181717' },
+      name: 'github',
+      iconName: Github,
+      color: '#181717',
+      textColor: '#6cc644',
+      hoverColor: '#6cc644',
       href: 'https://github.com/c-x-g',
     },
   ]
 
   const personalLinksComponent = personalLinkObjs.map((e) => {
-    return (
-      <li>
-        <a href={e.href} target="_blank" rel="noreferrer">
-          <Icon className="iconify" icon={e.iconName} data-inline="false" style={e.style}></Icon>
-        </a>
-      </li>
-    )
+    return createIcon(e)
   })
 
-  return (
-    <nav>
-      <div class="row nav-bar">
-        <ul class="main-nav">{personalLinksComponent}</ul>
-      </div>
-    </nav>
-  )
+  return <ButtonsWrapper>{personalLinksComponent}</ButtonsWrapper>
 }
 
 export default personalLinks
