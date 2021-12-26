@@ -31,7 +31,7 @@ const ButtonsWrapper = styled.div`
   margin-top: 7%;
 `
 
-const createIcon = ({ name, href, iconName, color, hoverColor, textColor }) => {
+const createIcon = ({ name, href, iconName, color, hoverColor }) => {
   const StyledIcon = styled(iconName)`
     margin-bottom: 20px;
     padding: 0;
@@ -58,7 +58,6 @@ const personalLinks = () => {
       name: 'gmail',
       iconName: Gmail,
       color: '#D14836',
-      textColor: '#FBBC05',
       hoverColor: '#4285F4',
       href: 'mailto:carlxguan@gmail.com',
     },
@@ -66,7 +65,6 @@ const personalLinks = () => {
       name: 'résumé',
       iconName: DocumentBulletList,
       color: '#228B22',
-      textColor: '#228B22',
       hoverColor: '#000',
       href: resume,
     },
@@ -74,7 +72,6 @@ const personalLinks = () => {
       name: 'leetcode',
       iconName: Leetcode,
       color: '#F89F1B',
-      textColor: '#F89F1B',
       hoverColor: '#A0A0A0',
       href: 'https://leetcode.com/c-x-g',
     },
@@ -82,7 +79,6 @@ const personalLinks = () => {
       name: 'linkedin',
       iconName: Linkedin,
       color: '#0077b5',
-      textColor: '#0077b5',
       hoverColor: 'teal',
       href: 'https://www.linkedin.com/in/carl-guan-b073341a5',
     },
@@ -90,7 +86,6 @@ const personalLinks = () => {
       name: 'github',
       iconName: Github,
       color: '#181717',
-      textColor: '#6cc644',
       hoverColor: '#6cc644',
       href: 'https://github.com/c-x-g',
     },
