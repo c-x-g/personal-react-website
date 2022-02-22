@@ -1,15 +1,19 @@
 import '../css/style.css'
 import '../css/queries.css'
+import styled from 'styled-components'
+
+const Paragraph = styled.p`
+  line-height: 160%;
+  font-weight: 400;
+  font-size: 35px;
+`
 
 const aboutMe = () => {
   return (
-    <p className="long-copy">
-      Hello! My name is Carl Guan and I am a software developer.
+    <Paragraph>
+      Hello! I&#39;m Carl&#44; a software engineer
       <br />
-      <br />
-      You can find my e-mail, resum&eacute;, and LeetCode, LinkedIn and GitHub profiles below!
-      <br />
-    </p>
+    </Paragraph>
   )
 }
 
