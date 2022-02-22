@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/carlguan.me/static/css/main.bd85ad82.chunk.css",
+    "main.js": "/carlguan.me/static/js/main.13165b9d.chunk.js",
+    "main.js.map": "/carlguan.me/static/js/main.13165b9d.chunk.js.map",
+    "runtime-main.js": "/carlguan.me/static/js/runtime-main.fdb94f43.js",
+    "runtime-main.js.map": "/carlguan.me/static/js/runtime-main.fdb94f43.js.map",
+    "static/js/2.a69942b2.chunk.js": "/carlguan.me/static/js/2.a69942b2.chunk.js",
+    "static/js/2.a69942b2.chunk.js.map": "/carlguan.me/static/js/2.a69942b2.chunk.js.map",
+    "static/js/3.361d99e0.chunk.js": "/carlguan.me/static/js/3.361d99e0.chunk.js",
+    "static/js/3.361d99e0.chunk.js.map": "/carlguan.me/static/js/3.361d99e0.chunk.js.map",
+    "index.html": "/carlguan.me/index.html",
+    "static/css/main.bd85ad82.chunk.css.map": "/carlguan.me/static/css/main.bd85ad82.chunk.css.map",
+    "static/js/2.a69942b2.chunk.js.LICENSE.txt": "/carlguan.me/static/js/2.a69942b2.chunk.js.LICENSE.txt",
+    "static/media/Carl_Guan_CV.b9549e2b.pdf": "/carlguan.me/static/media/Carl_Guan_CV.b9549e2b.pdf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.fdb94f43.js",
+    "static/js/2.a69942b2.chunk.js",
+    "static/css/main.bd85ad82.chunk.css",
+    "static/js/main.13165b9d.chunk.js"
+  ]
+}
