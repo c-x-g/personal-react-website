@@ -6,7 +6,7 @@ import resume from '../resume/Carl_Guan_CV.pdf'
 
 const IconWrapper = styled.div`
   display: inline;
-  width: 7%;
+  width: 5%;
   padding: 0;
   margin-right: 60px;
 `
@@ -68,13 +68,13 @@ const personalLinks = () => {
       hoverColor: '#000',
       href: resume,
     },
-    {
-      name: 'leetcode',
-      iconName: Leetcode,
-      color: '#F89F1B',
-      hoverColor: '#A0A0A0',
-      href: 'https://leetcode.com/c-x-g',
-    },
+    //    {
+    //      name: 'leetcode',
+    //      iconName: Leetcode,
+    //      color: '#F89F1B',
+    //      hoverColor: '#A0A0A0',
+    //      href: 'https://leetcode.com/c-x-g',
+    //    },
     {
       name: 'linkedin',
       iconName: Linkedin,
