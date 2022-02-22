@@ -28,7 +28,7 @@ const IconNameWrapper = styled.p`
 
 const ButtonsWrapper = styled.div`
   display: flex;
-  margin-top: 7%;
+  margin-top: 4%;
 `
 
 const createIcon = ({ name, href, iconName, color, hoverColor }) => {
